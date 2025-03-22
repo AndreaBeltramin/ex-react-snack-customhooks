@@ -1,7 +1,7 @@
 import useSwitch from "./useSwitch";
 
 function App() {
-	const [isOn, toggle] = useSwitch();
+	const { isOn, toggle } = useSwitch();
 
 	return (
 		<div>
