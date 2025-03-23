@@ -3,7 +3,7 @@ import useDate from "./useDate";
 import useCustomPointer from "./useCustomPointer";
 
 function App() {
-	const { isOn, toggle } = useSwitch();
+	const [isOn, toggle] = useSwitch();
 	const currentDate = useDate();
 	const customPointer = useCustomPointer("🔥");
 
