@@ -15,6 +15,7 @@ import useSwitch from "./useSwitch";
 function App() {
 const [isOn, toggle] = useSwitch();
 return (
+
 <div>
 <h1>Il valore è: {isOn ? "ON" : "OFF"}</h1>
 <button onClick={toggle}>Cambia Stato</button>
@@ -40,6 +41,7 @@ import useDate from "./useDate";
 function App() {
 const currentDate = useDate();
 return (
+
 <div>
 <h1>Data e ora attuali:</h1>
 <p>{currentDate.toLocaleString()}</p>
@@ -49,9 +51,7 @@ return (
 export default App;
 
 🏆 Snack 3: useCustomPointer() – Cambia il Cursore del Mouse
-
 Creare un custom hook che sostituisca il cursore del mouse con un componente personalizzato.
-
 Cosa deve fare?
 
     Prende in input una stringa o un JSX component (es. un’emoji, un'icona, un'animazione).
@@ -65,6 +65,7 @@ import useCustomPointer from "./useCustomPointer";
 function App() {
 const customPointer = useCustomPointer("🔥");
 return (
+
 <div>
 <h1>Sposta il mouse per vedere il cursore personalizzato!</h1>
 {customPointer}
@@ -73,12 +74,8 @@ return (
 }
 export default App;
 
-​
-
 🎯 Bonus: useKeyPress() – Rilevare un Tasto Premuto
-
 Creare un custom hook che rilevi se un tasto specifico della tastiera è premuto.
-
 Cosa deve fare?
 
     Prende in input il nome di un tasto ("Enter", "Escape", ecc.).
@@ -92,6 +89,7 @@ import useKeyPress from "./useKeyPress";
 function App() {
 const isEnterPressed = useKeyPress("Enter");
 return (
+
 <div>
 <h1>Tieni premuto "Enter" per testare il custom hook</h1>
 <p>{isEnterPressed ? "Enter premuto! ✅" : "Aspettando input... ⌨️"}</p>
